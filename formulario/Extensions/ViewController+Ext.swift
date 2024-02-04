@@ -90,6 +90,8 @@ extension ViewController {
                               self?.firstNameTextField.text = ""
                               self?.lastNameTextField.text = ""
                               self?.phoneTextField.text = ""
+                              
+                              self?.nameTextField.becomeFirstResponder()
                           },
                       ])
         } catch {
