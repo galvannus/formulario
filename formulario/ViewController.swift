@@ -14,11 +14,6 @@ class ViewController: UIViewController {
     var lastNameTextField: UITextField!
     var emailTextField: UITextField!
     var phoneTextField: UITextField!
-    var nameLabel: UILabel!
-    var firstNameLabel: UITextField!
-    var lastNameLabel: UITextField!
-    var emailLabel: UITextField!
-    var phoneLabel: UITextField!
     var submitButton: UIButton!
     var formRegisterStackView: UIStackView!
     
@@ -26,9 +21,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .systemBackground
-        //self.tabBar.backgroundColor = UIColor(displayP3Red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)
         navigationItem.title = "Registrar Usuario"
     }
     
@@ -57,7 +50,7 @@ class ViewController: UIViewController {
         emailTextField.keyboardType = .emailAddress
         
         phoneTextField = UITextField()
-        phoneTextField.placeholder = "Número de teléfono"
+        phoneTextField.placeholder = "Número celular"
         phoneTextField.keyboardType = .numberPad
 
         submitButton = UIButton(type: .system)
@@ -96,14 +89,10 @@ class ViewController: UIViewController {
 
         // Activar constraints
         NSLayoutConstraint.activate([
-            formRegisterStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            formRegisterStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
             formRegisterStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             formRegisterStackView.widthAnchor.constraint(equalToConstant: view.bounds.width - 40),
         ])
-    }
-    
-    @objc func submitForm(){
-        print("submit")
     }
 
 }

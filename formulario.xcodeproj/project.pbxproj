@@ -16,6 +16,7 @@
 		0B8015102B6DB93E00FAF453 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80150E2B6DB93E00FAF453 /* User+CoreDataClass.swift */; };
 		0B8015112B6DB93E00FAF453 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80150F2B6DB93E00FAF453 /* User+CoreDataProperties.swift */; };
 		0B9BC29F2B6F0D610096B4D3 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BC29E2B6F0D610096B4D3 /* ViewController+Ext.swift */; };
+		0B9BC2A42B6F34750096B4D3 /* UIAlertController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9BC2A32B6F34750096B4D3 /* UIAlertController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B80150E2B6DB93E00FAF453 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0B80150F2B6DB93E00FAF453 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0B9BC29E2B6F0D610096B4D3 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		0B9BC2A32B6F34750096B4D3 /* UIAlertController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,11 @@
 		0B8014F12B6DB4E100FAF453 /* formulario */ = {
 			isa = PBXGroup;
 			children = (
+				0B9BC2A52B6F49360096B4D3 /* Extensions */,
 				0B8015032B6DB4E100FAF453 /* Info.plist */,
 				0B8014F22B6DB4E100FAF453 /* AppDelegate.swift */,
 				0B8014F42B6DB4E100FAF453 /* SceneDelegate.swift */,
 				0B8014F62B6DB4E100FAF453 /* ViewController.swift */,
-				0B9BC29E2B6F0D610096B4D3 /* ViewController+Ext.swift */,
 				0B8014FE2B6DB4E100FAF453 /* Assets.xcassets */,
 				0B8014FB2B6DB4E100FAF453 /* formulario.xcdatamodeld */,
 				0B8015002B6DB4E100FAF453 /* LaunchScreen.storyboard */,
@@ -82,6 +84,15 @@
 				0B80150F2B6DB93E00FAF453 /* User+CoreDataProperties.swift */,
 			);
 			path = UserItem;
+			sourceTree = "<group>";
+		};
+		0B9BC2A52B6F49360096B4D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0B9BC2A32B6F34750096B4D3 /* UIAlertController+Ext.swift */,
+				0B9BC29E2B6F0D610096B4D3 /* ViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 				0B9BC29F2B6F0D610096B4D3 /* ViewController+Ext.swift in Sources */,
 				0B8015112B6DB93E00FAF453 /* User+CoreDataProperties.swift in Sources */,
 				0B8014F32B6DB4E100FAF453 /* AppDelegate.swift in Sources */,
+				0B9BC2A42B6F34750096B4D3 /* UIAlertController+Ext.swift in Sources */,
 				0B8014F52B6DB4E100FAF453 /* SceneDelegate.swift in Sources */,
 				0B8014FD2B6DB4E100FAF453 /* formulario.xcdatamodeld in Sources */,
 				0B8015102B6DB93E00FAF453 /* User+CoreDataClass.swift in Sources */,
