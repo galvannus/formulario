@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.title = "Registrar Usuario"
+        dismissKeyboardTapGesture()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,6 +93,8 @@ class ViewController: UIViewController {
             formRegisterStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
             formRegisterStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             formRegisterStackView.widthAnchor.constraint(equalToConstant: view.bounds.width - 40),
+            
+            submitButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
 
